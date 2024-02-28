@@ -1,11 +1,26 @@
-import './button.css'
+import React, { useState } from 'react'
+import './button.scss'
 
-function App() {
+function button() {
+
+  const [isLoggedIn, setIsLoggedIn] = useState(false)
+  const [buttonText, setButtonText] = useState('Login')
+
+  const handleClick = () => {
+    if (isLoggedIn) {
+      setIsLoggedIn(false)
+      setButtonText('Login')
+    } else {
+      setIsLoggedIn(true)
+      setButtonText('Logout')
+    }
+  }
+
   return (
     <div>
-      <button type='button'>Button</button>
+      <button onClick={handleClick} type='button'>{buttonText}</button>
     </div>
   )
 }
 
-export default App
+export default button
