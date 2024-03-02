@@ -17,7 +17,7 @@ function button() {
 
 	return (
 		<div>
-			<button onClick={handleClick} type="button">
+			<button className="loginBtn" onClick={handleClick} type="button">
 				{buttonText}
 			</button>
 		</div>

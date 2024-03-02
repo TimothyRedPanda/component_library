@@ -1,4 +1,4 @@
-button {
+.loginBtn {
   color: #30323D;
   background-color: #CDD1C4;
   border: 2px solid #5C80BC;
@@ -10,12 +10,12 @@ button {
   transition: all 0.25s;
 }
 
-button:hover {
+.loginBtn:hover {
   background-color: #5C80BC;
   color: #CDD1C4;
   transform: translateY(-5px);
 }
 
-button:active {
+.loginBtn:active {
   transform: translateY(0);
 }
