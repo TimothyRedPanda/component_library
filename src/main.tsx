@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import Button from "./components/button/button.tsx";
+import Button from "./components/button/button";
 import "./index.scss";
 
 const rootElement = document.getElementById("root");
