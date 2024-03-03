@@ -8,7 +8,19 @@
     gap: 1rem;
 }
 
+@font-face {
+    font-family: "Fira Sans";
+    src: url(/src/fonts/Fira_Sans/FiraSans-Thin.ttf);
+}
+
+
 body {
     background-color: #d1d1d1;
+}
+
+* {
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 100;
+    font-style: normal;
 }
 

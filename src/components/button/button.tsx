@@ -1,26 +1,20 @@
-import React, { useState } from "react";
+import { motion } from "framer-motion";
 import "./button.scss";
 
+const buttonText = "Button";
+
 function button() {
-	const [isLoggedIn, setIsLoggedIn] = useState(false);
-	const [buttonText, setButtonText] = useState("Login");
-
-	const handleClick = () => {
-		if (isLoggedIn) {
-			setIsLoggedIn(false);
-			setButtonText("Login");
-		} else {
-			setIsLoggedIn(true);
-			setButtonText("Logout");
-		}
-	};
-
 	return (
-		<div>
-			<button className="loginBtn" onClick={handleClick} type="button">
+		<>
+			<motion.button
+				className="styledBtn"
+				whileHover={{ y: -5, backgroundColor: "#9c1a04", color: "#fce7d2" }}
+				transition={{ transition: 0.25 }}
+				whileTap={{ scale: 0.98 }}
+			>
 				{buttonText}
-			</button>
-		</div>
+			</motion.button>
+		</>
 	);
 }
 
