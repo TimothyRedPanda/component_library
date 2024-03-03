@@ -1,12 +1,18 @@
+$primary-color: #b13d14;
+$secondary-color: #fce7dc;
+$tertiary-color: #340701;
+$quaternary-color: #9c1a04;
+$quinary-color: #db8758;
+
 .slideContainer {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    background-color: #fce7d2;
     width: 4rem;
     height: 2rem;
     border-radius: 3rem;
-    border:2px solid #9c1a04;
+    background-color: $secondary-color;
+    border:2px solid $quinary-color;
     cursor: pointer;
 }
 
@@ -20,8 +26,8 @@
     height: 100%;
     aspect-ratio: 1/1;
     border-radius: 100%;
-    background-color: #9c1a04;
-    border: 2px solid #fce7d2;
+    background-color: $quinary-color;
+    border: 2px solid $secondary-color;
     outline: none;
     cursor: pointer;
 }

@@ -20,7 +20,7 @@ function slideBtn() {
 				data-isOn={isOn}
 				onClick={toggleSwitch}
 				animate={{
-					backgroundColor: isOn ? "#fce7d2" : "#9c1a04",
+					backgroundColor: isOn ? "#fce7dc" : "#db8758",
 				}}
 			>
 				<motion.button

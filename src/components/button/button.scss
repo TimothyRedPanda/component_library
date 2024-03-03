@@ -1,7 +1,14 @@
+$primary-color: #b13d14;
+$secondary-color: #fce7dc;
+$tertiary-color: #340701;
+$quaternary-color: #9c1a04;
+$quinary-color: #db8758;
+
 .styledBtn {
-    color: #9c1a04;
-    background-color: #fce7d2;
-    border: 2px solid #9c1a04;
+    color: $quinary-color;
+    background-color: $secondary-color;
+    border: 2px solid $quinary-color;
+    color: $quinary-color;
     font-size: 2rem;
     border-radius: 2.5rem;
     padding: 1rem 2rem;
