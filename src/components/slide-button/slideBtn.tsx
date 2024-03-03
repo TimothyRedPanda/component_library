@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { easeInOut, motion } from "framer-motion";
+import { motion } from "framer-motion";
 import "./slideBtn.scss";
 
 function slideBtn() {
@@ -9,7 +9,7 @@ function slideBtn() {
 	};
 
 	const switchTransition = {
-		duration: 0.25,
+		duration: 0.35,
 		ease: "easeInOut",
 	};
 
@@ -19,6 +19,9 @@ function slideBtn() {
 				className="slideContainer"
 				data-isOn={isOn}
 				onClick={toggleSwitch}
+				animate={{
+					backgroundColor: isOn ? "#fce7d2" : "#9c1a04",
+				}}
 			>
 				<motion.button
 					className="slideBtn"

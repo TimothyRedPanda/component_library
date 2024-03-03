@@ -12,7 +12,7 @@ function button() {
 				className="styledBtn"
 				whileHover={buttonVariants}
 				transition={buttonTransition}
-				whileTap={{ scale: 0.98 }}
+				whileTap={{ scale: 0.95 }}
 			>
 				{buttonText}
 			</motion.button>
