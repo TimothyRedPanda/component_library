@@ -3,7 +3,7 @@ import "./button.scss";
 
 const buttonText = "Button";
 const buttonTransition = { transition: 0.25, ease: "easeInOut" };
-const buttonVariants = { y: -5, backgroundColor: "#db8758", color: "#fce7dc" };
+const buttonVariants = { y: -5, backgroundColor: "#db8758", color: "#fff" };
 
 function button() {
 	return (

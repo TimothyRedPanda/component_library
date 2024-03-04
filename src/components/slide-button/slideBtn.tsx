@@ -1,5 +1,5 @@
-import React, { useState } from "react";
 import { motion } from "framer-motion";
+import React, { useState } from "react";
 import "./slideBtn.scss";
 
 function slideBtn() {
@@ -20,7 +20,7 @@ function slideBtn() {
 				data-isOn={isOn}
 				onClick={toggleSwitch}
 				animate={{
-					backgroundColor: isOn ? "#fce7dc" : "#db8758",
+					backgroundColor: isOn ? "#fff" : "#db8758",
 				}}
 			>
 				<motion.button
