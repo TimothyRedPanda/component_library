@@ -10,7 +10,7 @@ if (rootElement) {
 	const root = ReactDOM.createRoot(rootElement);
 	root.render(
 		<React.StrictMode>
-			<Button />
+			<Button>Red Panda</Button>
 			<SlideBtn />
 		</React.StrictMode>,
 	);
