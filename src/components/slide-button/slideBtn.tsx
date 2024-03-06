@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import React, { useState } from "react";
 import "./slideBtn.scss";
 
-function slideBtn() {
+function SlideButton() {
 	const [isOn, setIsOn] = useState(false);
 	const toggleSwitch = () => {
 		setIsOn(!isOn);
@@ -33,4 +33,4 @@ function slideBtn() {
 	);
 }
 
-export default slideBtn;
+export default SlideButton;

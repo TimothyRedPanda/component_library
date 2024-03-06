@@ -4,7 +4,7 @@ import "./button.scss";
 const buttonTransition = { transition: 0.25, ease: "easeInOut" };
 const buttonVariants = { y: -5, backgroundColor: "#db8758", color: "#fff" };
 
-function button({ children }: { children: React.ReactNode }) {
+function Button({ children }: { children: React.ReactNode }) {
 	return (
 		<>
 			<motion.button
@@ -19,4 +19,4 @@ function button({ children }: { children: React.ReactNode }) {
 	);
 }
 
-export default button;
+export default Button;
