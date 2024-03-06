@@ -205,4 +205,14 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-# End of https://www.toptal.com/developers/gitignore/api/node,react,windows
+# Created by https://www.toptal.com/developers/gitignore/api/storybookjs
+# Edit at https://www.toptal.com/developers/gitignore?templates=storybookjs
+
+### StorybookJs ###
+# gitignore template for the Storybook, UI guide for front apps
+# website: https://storybook.js.org/
+
+storybook-static/
+.storybook
+stories
+# End of https://www.toptal.com/developers/gitignore/api/storybookjs
