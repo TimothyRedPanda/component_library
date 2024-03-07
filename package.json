@@ -1,8 +1,8 @@
 {
-	"name": "red-panda-ui",
+	"name": "red-panda-components",
 	"private": false,
-	"version": "0.0.1",
-	"main": "src/components/index.ts",
+	"version": "0.0.3",
+	"main": "dist/index.js",
 	"files": ["dist/**/*"],
 	"scripts": {
 		"dev": "vite",
@@ -12,9 +12,7 @@
 		"storybook": "storybook dev -p 6006",
 		"build-storybook": "storybook build"
 	},
-	"dependencies": {
-		"framer-motion": "^11.0.8"
-	},
+	"dependencies": {},
 	"devDependencies": {
 		"@types/jest": "^29.5.12",
 		"react": "^18.2.0",
@@ -43,7 +41,8 @@
 	},
 	"peerDependencies": {
 		"react": "^18.2.0",
-		"react-dom": "^18.2.0"
+		"react-dom": "^18.2.0",
+		"framer-motion": "^11.0.8"
 	},
 	"eslintConfig": {
 		"extends": ["plugin:storybook/recommended"]
