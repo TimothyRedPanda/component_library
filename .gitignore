@@ -214,5 +214,5 @@ $RECYCLE.BIN/
 
 storybook-static/
 .storybook
-stories
+src/stories
 # End of https://www.toptal.com/developers/gitignore/api/storybookjs
