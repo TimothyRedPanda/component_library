@@ -1,1 +1,1 @@
-export { default as SlideButton } from "./slideBtn.tsx";
+export { default as SlideButton } from "./slideBtn";

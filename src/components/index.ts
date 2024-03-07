@@ -1,2 +1,2 @@
-export * from "./button/index.ts";
-export * from "./slide-button/index.ts";
+export * from "./button/index";
+export * from "./slide-button/index";
