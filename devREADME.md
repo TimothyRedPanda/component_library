@@ -13,10 +13,9 @@ To work with this project you will need three main dependencies (not including t
 Extra details -: The project itself was installed using Vite i.e. `npm create vite@latest`. This is not needed for you if you are cloning down the respository
 as it already has the correct folder structure. 
 
-If you wish to add a component to this library the folder structure is as follows - src/components/<your component name>/ inside this innner folder you should
+If you wish to add a component to this library the folder structure is as follows - src/components/component_name - inside this innner folder you should
 have a 
                                                                                                            
-      <component_name>.tsx, <component_name>.scss and a index.ts file. 
-      The index.ts file is solely to export the contents of the folder - for use in the npm
-                                                                                                           
-package layout.
+      component_name.tsx, component_name.scss and a index.ts file. 
+  
+The index.ts file is solely to export the contents of the folder - for use in the npm package layout.
