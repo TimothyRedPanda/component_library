@@ -4,6 +4,7 @@
 	"version": "0.0.5",
 	"main": "src/components/index.ts",
 	"files": ["src/components"],
+	"license": "MIT",
 	"scripts": {
 		"dev": "vite",
 		"build": "tsc",
