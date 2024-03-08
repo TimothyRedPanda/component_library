@@ -1,13 +1,16 @@
 import { Button } from "./components/button";
 import { SlideButton } from "./components/slide-button";
+import "./index.scss";
 
 function App() {
-    return (
-        <>
-        <SlideButton></SlideButton>
-        <Button>Button</Button>
-        </>
-    )
+	return (
+		<>
+			<div className="wrapper">
+				<SlideButton />
+				<Button>Button</Button>
+			</div>
+		</>
+	);
 }
 
 export default App;
