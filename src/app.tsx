@@ -1,5 +1,4 @@
-import { Button } from "./components/button";
-import { SlideButton } from "./components/slide-button";
+import { SlideButton, Button } from "./components";
 import "./index.scss";
 
 function App() {
