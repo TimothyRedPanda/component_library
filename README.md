@@ -6,4 +6,3 @@ Currently a student at School of Code. To install -
 
 This will install red-panda-components into your project and also the framer-motion and sass dependencies. Currently it is a Typescript React library.
 
-
