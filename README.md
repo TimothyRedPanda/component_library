@@ -1,3 +1,5 @@
+For Developers Readme see - developers readme folder.
+
 Red Panda Components -
 This is a component library being maintained by Timothy Bridge.
 Currently a student at School of Code. To install - 
