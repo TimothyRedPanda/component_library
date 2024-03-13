@@ -1,11 +1,11 @@
-To work on a contribute to this project -
-      npm install typescript sass framer-motion
+Red Panda Components -
+This is a component library being maintained by Timothy Bridge.
+Currently a student at School of Code. To install - 
 
-To run the project -
-      npm run dev
+    npm i red-panda-components framer-motion sass
 
-To add new components -
-      src/components/<your component folder>/<your component>
+This will install red-panda-components into your project and also the framer-motion and sass dependencies. Currently it is a Typescript React library.
 
-Export file for all components -
-      src/components/index.ts
+To import into your react project -
+    
+    import { Button, SlideButton } from "red-panda-components";

@@ -1,7 +1,7 @@
 {
 	"name": "red-panda-components",
 	"private": false,
-	"version": "0.0.5",
+	"version": "0.0.8",
 	"main": "src/components/index.ts",
 	"files": ["src/components"],
 	"license": "MIT",
@@ -11,12 +11,8 @@
 		"lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
 		"preview": "vite preview"
 	},
-	"dependencies": {},
 	"devDependencies": {
 		"@types/jest": "^29.5.12",
-		"react": "^18.2.0",
-		"react-dom": "^18.2.0",
-		"typescript": "^5.3.3",
 		"@types/node": "^20.11.24",
 		"@types/react": "^18.2.61",
 		"@types/react-dom": "^18.2.19",
@@ -25,13 +21,16 @@
 		"eslint-plugin-react": "^7.33.2",
 		"eslint-plugin-react-hooks": "^4.6.0",
 		"eslint-plugin-react-refresh": "^0.4.5",
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0",
 		"sass": "^1.71.1",
+		"typescript": "^5.4.2",
 		"vite": "^5.1.4"
 	},
 	"peerDependencies": {
+		"framer-motion": "^11.0.12",
 		"react": "^18.2.0",
-		"react-dom": "^18.2.0",
-		"framer-motion": "^11.0.8"
+		"react-dom": "^18.2.0"
 	},
 	"eslintConfig": {
 		"extends": ["plugin:storybook/recommended"]
