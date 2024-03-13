@@ -1,4 +1,4 @@
-To work on a contribute to this project -
+To work on and contribute to this project -
       npm install typescript sass framer-motion
 
 To run the project -
