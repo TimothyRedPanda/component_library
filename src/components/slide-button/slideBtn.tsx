@@ -3,9 +3,9 @@ import React, { useState } from "react";
 import "./slideBtn.scss";
 
 function SlideButton() {
-	const [isOn, setIsOn] = useState(false);
+	const [on, setison] = useState(false);
 	const toggleSwitch = () => {
-		setIsOn(!isOn);
+		setison(!on);
 	};
 
 	const switchTransition = {
@@ -17,10 +17,10 @@ function SlideButton() {
 		<>
 			<motion.div
 				className="slideContainer"
-				data-isOn={isOn}
+				data-ison={on}
 				onClick={toggleSwitch}
 				animate={{
-					backgroundColor: isOn ? "#fff" : "#db8758",
+					backgroundColor: on ? "#fff" : "#db8758",
 				}}
 			>
 				<motion.button
