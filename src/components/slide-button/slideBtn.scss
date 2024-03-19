@@ -1,33 +1,31 @@
 $primary-color: #b13d14;
-$secondary-color: #fff;
-$tertiary-color: #340701;
 $quaternary-color: #9c1a04;
 $quinary-color: #db8758;
+$secondary-color: #fff;
+$tertiary-color: #340701;
+
+.slideBtn {
+    aspect-ratio: 1/1;
+    background-color: $quinary-color;
+    border: 2px solid $secondary-color;
+    border-radius: 100%;
+    cursor: pointer;
+    height: 100%;
+    outline: none;
+}
 
 .slideContainer {
-    display: flex;
     align-items: center;
+    background-color: $secondary-color;
+    border: 2px solid $quinary-color;
+    border-radius: 3rem;
+    cursor: pointer;
+    display: flex;
+    height: 2rem;
     justify-content: flex-start;
     width: 4rem;
-    height: 2rem;
-    border-radius: 3rem;
-    background-color: $secondary-color;
-    border:2px solid $quinary-color;
-    cursor: pointer;
 }
 
 .slideContainer[data-isOn="true"] {
     justify-content: flex-end;
-}
-
-
-
-.slideBtn {
-    height: 100%;
-    aspect-ratio: 1/1;
-    border-radius: 100%;
-    background-color: $quinary-color;
-    border: 2px solid $secondary-color;
-    outline: none;
-    cursor: pointer;
 }

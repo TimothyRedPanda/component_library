@@ -1,0 +1,51 @@
+$primary-color: #b13d14;
+$quaternary-color: #9c1a04;
+$quinary-color: #db8758;
+$secondary-color: #fff;
+$tertiary-color: #340701;
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.card-container {
+    align-items: center;
+    background: $quinary-color;
+    border: 2px solid $quinary-color;
+    border-radius: 1rem;
+    -webkit-box-shadow: -4px 21px 51px -5px rgba(0,0,0,0.5);
+    -moz-box-shadow: -4px 21px 51px -5px rgba(0,0,0,0.5);
+    box-shadow: -4px 21px 51px -5px rgba(0,0,0,0.5);
+    color: $secondary-color;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    text-align: center;
+    width: 300px;
+}
+
+.card-description {
+    padding: 0rem 0.5rem 0.5rem 0.5rem;
+    text-align: left;
+    font-size: 1.2rem;
+}
+
+.card-img {
+    width: 100%;
+    border-radius: 1rem 1rem 0rem 0rem;
+}
+
+.card-title {
+    font-size: 2rem;
+    border-bottom: 2px;
+    padding: 0.2rem 0.2rem 0rem 0.2rem;
+}

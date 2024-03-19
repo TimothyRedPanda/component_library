@@ -1,11 +1,22 @@
+@font-face {
+    font-family: 'poiret';
+    src: url(./assets/fonts/Poiret_One/PoiretOne-Regular.ttf)
+}
+
+*{
+    font-family: "poiret", sans-serif;
+}
+
 .wrapper {
+    align-items: start;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(4, 1fr);
     grid-gap: 1rem;
-    padding: 1rem;
-    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
     height: 100vh;
     justify-content: center;
-    align-items: start;
+    padding: 1rem;
+    width: 100vw;
 }
