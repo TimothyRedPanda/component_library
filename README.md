@@ -1,5 +1,7 @@
 For Developers Readme see - developers readme folder - in the github repository.
 
+Version 0.1.1 - Small import fix.
+
 Version 0.0.9 - Card component added -
 
     <SlideButton />
