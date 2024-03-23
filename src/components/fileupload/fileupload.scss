@@ -1,0 +1,25 @@
+$primary-color: #b13d14;
+$quaternary-color: #9c1a04;
+$quinary-color: #db8758;
+$secondary-color: #fff;
+$tertiary-color: #340701;
+
+input[type="file"] {
+  display: none;
+}
+
+.file-label {
+    display: flex;
+    font-size: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    height: fit-content;
+    background: $secondary-color;
+    padding: 1%;
+    color: $quinary-color;
+    border: 2px solid $quinary-color;
+    border-radius: 3rem;
+    cursor: pointer;
+    transition: all 0.35s ease-in-out;
+}

@@ -1,5 +1,17 @@
 For Developers Readme see - developers readme folder - in the github repository.
 
+Version 0.1.4 - onClick functionality added to all button components -
+
+	onClick={() => {alert("Button CLicked")}}
+
+For example.
+
+Also add a custom file upload button -
+
+	<FileUpload uploadText="Upload File" accepts="image/*" />
+
+It takes uploadText and accepts as properties. The accepts property is optional - in this example we are limiting the button to showing image files.
+
 Version 0.1.3 - README updated for Input component.
 
 Version 0.1.2 - Input component added -
@@ -29,4 +41,4 @@ This will install red-panda-components into your project and also the framer-mot
 
 To import into your react project -
     
-    import { Button, SlideButton, Card, Input } from "red-panda-components";
+    import { Button, SlideButton, Card, Input, FileUpload } from "red-panda-components";

@@ -4,13 +4,11 @@ import "./button.scss";
 const buttonTransition = { transition: 0.25, ease: "easeInOut" };
 const buttonVariants = { y: -5, backgroundColor: "#db8758", color: "#fff" };
 
-interface ButtonProps {
-	text: string;
-}
-function Button(props: ButtonProps) {
+function Button(props: { text: string; onClick: () => void }) {
 	return (
 		<>
 			<motion.button
+				onClick={props.onClick}
 				className="styledBtn"
 				whileHover={buttonVariants}
 				transition={buttonTransition}

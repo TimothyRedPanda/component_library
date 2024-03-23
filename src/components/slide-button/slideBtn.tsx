@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import React, { useState } from "react";
 import "./slideBtn.scss";
 
-function SlideButton() {
+function SlideButton(props: { onClick?: () => void }) {
 	const [on, setison] = useState(false);
 	const toggleSwitch = () => {
 		setison(!on);
@@ -18,6 +18,7 @@ function SlideButton() {
 			<motion.div
 				className="slideContainer"
 				data-ison={on}
+				onClickCapture={props.onClick}
 				onClick={toggleSwitch}
 				animate={{
 					backgroundColor: on ? "#fff" : "#db8758",
