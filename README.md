@@ -1,5 +1,7 @@
 For Developers Readme see - developers readme folder - in the github repository.
 
+Version 0.1.3 - README updated for Input component.
+
 Version 0.1.2 - Input component added -
 	
 	<Input id="inputId" label="Optional Label:" />
