@@ -1,4 +1,4 @@
-import { SlideButton, Button, Card } from "./components";
+import { Button, Card, Input, SlideButton } from "./components";
 import "./index.scss";
 
 function App() {
@@ -6,6 +6,7 @@ function App() {
 		<>
 			<div className="wrapper">
 				<SlideButton />
+				<Input id="inputId" label="Optional Label:" />
 				<Button text="Click me" />
 				<Card
 					title="Red Panda"

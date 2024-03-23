@@ -8,13 +8,10 @@
 }
 
 .wrapper {
-    align-items: start;
-    display: grid;
-    grid-gap: 1rem;
-    justify-content: center;
     align-items: center;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(5, 1fr);
+    gap: 3rem;
+    display: flex;
+    flex-flow: row wrap;
     height: 100vh;
     justify-content: center;
     padding: 1rem;

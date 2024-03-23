@@ -1,5 +1,8 @@
 For Developers Readme see - developers readme folder - in the github repository.
 
+Version 0.1.2 - Input component added -
+	<Input id="inputId" label="Optional Label:" />
+
 Version 0.1.1 - Small import fix.
 
 Version 0.0.9 - Card component added -
@@ -23,4 +26,4 @@ This will install red-panda-components into your project and also the framer-mot
 
 To import into your react project -
     
-    import { Button, SlideButton, Card } from "red-panda-components";
+    import { Button, SlideButton, Card, Input } from "red-panda-components";
