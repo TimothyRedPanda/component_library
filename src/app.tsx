@@ -34,7 +34,7 @@ function App() {
 				<ImagePreview
 					image={file ? file : "src/assets/images/red-panda.jpg"}
 					alt="Upload Image"
-					width="300px"
+					width="400px"
 				/>
 				<Input id="inputId" label="Optional Label:" />
 				<Button

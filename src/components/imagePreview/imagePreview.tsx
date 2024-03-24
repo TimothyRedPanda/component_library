@@ -11,7 +11,7 @@ function ImagePreview(props: {
 			<motion.img
 				whileHover={{
 					transition: { duration: 0.35 },
-					scale: 2,
+					scale: 1.2,
 				}}
 				className="image-preview"
 				src={props.image}
