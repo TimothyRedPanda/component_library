@@ -1,5 +1,24 @@
 For Developers Readme see - developers readme folder - in the github repository.
 
+Version 0.1.5 - Image preview component added - onChange property added to file upload. For example you
+could link the upload to the image preview - displaying the image you just uploaded.
+
+			function handleChange(event) {
+				console.log(event.target.files);
+					setFile(URL.createObjectURL(event.target.files[0]));
+				}
+
+			<FileUpload
+					uploadText="Upload File: "
+					accepts="image/*"
+					onChange={handleChange}
+				/>
+			<ImagePreview
+					image={file ? file : "default src of your choice"}
+					alt="Upload Image"
+					width="300px"
+				/>
+
 Version 0.1.4 - onClick functionality added to all button components -
 
 	onClick={() => {alert("Button CLicked")}}
@@ -41,4 +60,4 @@ This will install red-panda-components into your project and also the framer-mot
 
 To import into your react project -
     
-    import { Button, SlideButton, Card, Input, FileUpload } from "red-panda-components";
+    import { Button, SlideButton, Card, Input, FileUpload, ImagePreview } from "red-panda-components";
