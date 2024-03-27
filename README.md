@@ -1,5 +1,7 @@
 For Developers Readme see - developers readme folder - in the github repository.
 
+Version 0.1.7 - File upload icon svg added to file upload - small bug fixes/refactoring.
+
 Version 0.1.6 - Improved Image preview animation - it doesn't scale as large now.
 
 Version 0.1.5 - Image preview component added - onChange property added to file upload. For example you
