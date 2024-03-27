@@ -11,10 +11,11 @@ import "./index.scss";
 function App() {
 	const [darkMode, setDarkMode] = useState(false);
 	const [file, setFile] = useState<string | undefined>();
+	const [fileName, setFileName] = useState<string>("");
 	const [inputValue, setInputValue] = useState<string>("");
 	function handleChange(event) {
-		console.log(event.target.files);
 		setFile(URL.createObjectURL(event.target.files[0]));
+		setFileName(event.target.files[0].name);
 	}
 	return (
 		<>
@@ -22,16 +23,13 @@ function App() {
 				className="wrapper"
 				style={darkMode ? { background: "#fff" } : { background: "#000" }}
 			>
-				<h1 style={{ width: "200px", height: "200px", overflowY: "scroll" }}>
-					{inputValue}
-				</h1>
 				<SlideButton
 					onClick={() => {
 						darkMode ? setDarkMode(false) : setDarkMode(true);
 					}}
 				/>
 				<FileUpload
-					uploadText="Upload File: "
+					uploadText={fileName}
 					accepts="image/*"
 					onChange={handleChange}
 				/>
@@ -54,7 +52,11 @@ function App() {
 				/>
 				<Card
 					title="Red Panda"
-					description="Everything on this card is editable including the image, title and description. The card itself is a link (editable as well)."
+					description={
+						inputValue
+							? inputValue
+							: "This is an editable text field. You can change the text to anything you like."
+					}
 					image="src/assets/images/red-panda.jpg"
 					link="https://www.chewedleashphotography.com"
 				/>
