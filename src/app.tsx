@@ -1,16 +1,17 @@
+import { useState } from "react";
 import {
 	Button,
 	Card,
-	Input,
-	SlideButton,
 	FileUpload,
 	ImagePreview,
+	Input,
+	SlideButton,
 } from "./components";
-import { useState } from "react";
 import "./index.scss";
 function App() {
 	const [darkMode, setDarkMode] = useState(false);
 	const [file, setFile] = useState<string | undefined>();
+	const [inputValue, setInputValue] = useState<string>("");
 	function handleChange(event) {
 		console.log(event.target.files);
 		setFile(URL.createObjectURL(event.target.files[0]));
@@ -21,6 +22,9 @@ function App() {
 				className="wrapper"
 				style={darkMode ? { background: "#fff" } : { background: "#000" }}
 			>
+				<h1 style={{ width: "200px", height: "200px", overflowY: "scroll" }}>
+					{inputValue}
+				</h1>
 				<SlideButton
 					onClick={() => {
 						darkMode ? setDarkMode(false) : setDarkMode(true);
@@ -36,7 +40,12 @@ function App() {
 					alt="Upload Image"
 					width="400px"
 				/>
-				<Input id="inputId" label="Optional Label:" />
+				<Input
+					id="inputId"
+					label="Optional Label:"
+					value={inputValue}
+					setValue={setInputValue}
+				/>
 				<Button
 					text="Click me"
 					onClick={(): void => {

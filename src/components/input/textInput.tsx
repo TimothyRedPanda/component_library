@@ -1,8 +1,12 @@
 import { useState } from "react";
 import "./input.scss";
 
-function Input(props: { id: string; label?: string }) {
-	const [value, setValue] = useState("");
+function Input(props: {
+	id: string;
+	label?: string;
+	value: string;
+	setValue: (value: string) => void;
+}) {
 	return (
 		<div className="input-container">
 			<label htmlFor={props.id}>{props.label}</label>
@@ -10,8 +14,8 @@ function Input(props: { id: string; label?: string }) {
 				className="input-field"
 				id={props.id}
 				type="text"
-				value={value}
-				onChange={(e) => setValue(e.target.value)}
+				value={props.value}
+				onChange={(e) => props.setValue(e.target.value)}
 			/>
 		</div>
 	);

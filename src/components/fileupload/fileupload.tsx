@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import SvgComponent from "./fileIcon";
 import "./fileupload.scss";
 
 const inputTransition = { transition: 0.25, ease: "easeInOut" };
@@ -16,6 +17,7 @@ function FileUpload(props: {
 			transition={inputTransition}
 			whileTap={{ scaleX: 0.95 }}
 		>
+			<SvgComponent />
 			{props.uploadText}
 			<input
 				id="fileUpload"
