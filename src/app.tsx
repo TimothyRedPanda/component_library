@@ -13,9 +13,11 @@ function App() {
 	const [file, setFile] = useState<string | undefined>();
 	const [fileName, setFileName] = useState<string>("");
 	const [inputValue, setInputValue] = useState<string>("");
-	function handleChange(event) {
-		setFile(URL.createObjectURL(event.target.files[0]));
-		setFileName(event.target.files[0].name);
+	function handleChange(event: React.ChangeEvent<HTMLInputElement>) {
+		const eventTarget = event.target;
+		const firstFile = eventTarget.files?.[0] as File;
+		setFile(URL.createObjectURL(firstFile));
+		setFileName(firstFile.name);
 	}
 	return (
 		<>
