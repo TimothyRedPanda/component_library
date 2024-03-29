@@ -30,6 +30,12 @@ function App() {
 						darkMode ? setDarkMode(false) : setDarkMode(true);
 					}}
 				/>
+				<Button
+					text="Click me"
+					onClick={(): void => {
+						alert("Button clicked!");
+					}}
+				/>
 				<FileUpload
 					uploadText={fileName}
 					accepts="image/*"
@@ -45,12 +51,6 @@ function App() {
 					label="Optional Label:"
 					value={inputValue}
 					setValue={setInputValue}
-				/>
-				<Button
-					text="Click me"
-					onClick={(): void => {
-						alert("Button clicked!");
-					}}
 				/>
 				<Card
 					title={fileName ? fileName : "Red Panda"}
