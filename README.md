@@ -1,5 +1,7 @@
 For Developers Readme see - developers readme folder - in the github repository.
 
+Version 0.1.8 - File upload SVG is now animated.
+
 Version 0.1.7 - File upload icon svg added to file upload - small bug fixes/refactoring.
 
 Version 0.1.6 - Improved Image preview animation - it doesn't scale as large now.
