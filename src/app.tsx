@@ -53,19 +53,13 @@ function App() {
 					}}
 				/>
 				<Card
-					title="Red Panda"
+					title={fileName ? fileName : "Red Panda"}
 					description={
 						inputValue
 							? inputValue
 							: "This is an editable text field. You can change the text to anything you like."
 					}
-					image="src/assets/images/red-panda.jpg"
-					link="https://www.chewedleashphotography.com"
-				/>
-				<Card
-					title="Lemur"
-					description="Everything on this card is editable including the image, title and description. The card itself is a link (editable as well)."
-					image="src/assets/images/lemur.jpg"
+					image={file ? file : "src/assets/images/red-panda.jpg"}
 					link="https://www.chewedleashphotography.com"
 				/>
 			</div>

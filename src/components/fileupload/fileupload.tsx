@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { useState } from "react";
 import SvgComponent from "./fileIcon";
 import "./fileupload.scss";
 
@@ -9,15 +10,24 @@ function FileUpload(props: {
 	onChange?: (event: React.ChangeEvent<HTMLInputElement>) => void;
 	uploadText: string;
 }) {
+	const [isHovered, setIsHovered] = useState(false);
 	return (
 		<motion.label
 			className="file-label"
 			htmlFor="fileUpload"
+			onMouseOver={() => {
+				setIsHovered(true);
+			}}
+			onMouseOut={() => {
+				setIsHovered(false);
+			}}
 			whileHover={inputVariants}
 			transition={inputTransition}
 			whileTap={{ scaleX: 0.95 }}
 		>
-			<SvgComponent />
+			<div className="file-icon">
+				<SvgComponent isHovered={isHovered} />
+			</div>
 			{props.uploadText}
 			<input
 				id="fileUpload"
