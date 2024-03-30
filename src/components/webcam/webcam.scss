@@ -1,0 +1,36 @@
+$primary-color: #b13d14;
+$quaternary-color: #9c1a04;
+$quinary-color: #db8758;
+$secondary-color: #fff;
+$tertiary-color: #340701;
+
+#videoCam {
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 2rem;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+    border: $quinary-color solid 2px;
+    transition: all 0.35s ease-in-out;
+}
+
+.webcam-container {
+    display: flex;
+    flex-flow: column wrap;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-container {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-container {
+    width: fit-content;
+    align-self: center;
+}

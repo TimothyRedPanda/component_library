@@ -8,13 +8,21 @@
 }
 
 .wrapper {
-    align-items: center;
-    gap: 3rem;
+    gap: 1rem;
     display: flex;
     flex-flow: row wrap;
-    height: 100vh;
     justify-content: center;
-    padding: 1rem;
+    align-items: center;
+    padding: 3rem;
     width: 100vw;
+    height: 100vh;
     transition: all 0.5s ease-in-out;
+}
+
+.container-sections {
+    display: flex;
+    flex-flow: column wrap;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
 }
