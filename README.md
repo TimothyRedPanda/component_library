@@ -1,5 +1,22 @@
 For Developers Readme see - developers readme folder - in the github repository.
 
+Red Panda Components -
+This is a component library being maintained by Timothy Bridge.
+Currently a student at School of Code. To install - 
+
+    npm i red-panda-components framer-motion sass
+
+This will install red-panda-components into your project and also the framer-motion and sass dependencies. Currently it is a Typescript React library.
+
+To import into your react project -
+    
+    import { Button, SlideButton, Card, Input, FileUpload, ImagePreview, Webcam } from "red-panda-components";
+
+
+Version 0.1.9 - Webcam component added -
+
+			<Webcam width={400} />
+
 Version 0.1.8 - File upload SVG is now animated.
 
 Version 0.1.7 - File upload icon svg added to file upload - small bug fixes/refactoring.
@@ -55,15 +72,3 @@ Version 0.0.9 - Card component added -
 		image="Path to your image here"
 		link="Your link here"
 	/>
-
-Red Panda Components -
-This is a component library being maintained by Timothy Bridge.
-Currently a student at School of Code. To install - 
-
-    npm i red-panda-components framer-motion sass
-
-This will install red-panda-components into your project and also the framer-motion and sass dependencies. Currently it is a Typescript React library.
-
-To import into your react project -
-    
-    import { Button, SlideButton, Card, Input, FileUpload, ImagePreview } from "red-panda-components";
