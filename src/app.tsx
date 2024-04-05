@@ -22,11 +22,11 @@ function App() {
 	}
 	return (
 		<>
-			<div
-				className="wrapper"
-				style={{ backgroundColor: darkMode ? "black" : "white" }}
-			>
-				<section className="container-sections">
+			<div className="wrapper">
+				<section
+					className="container-sections"
+					style={{ backgroundColor: darkMode ? "#f1f1f1" : "#000" }}
+				>
 					<SlideButton
 						onClick={() => {
 							darkMode ? setDarkMode(false) : setDarkMode(true);
@@ -52,7 +52,7 @@ function App() {
 					<ImagePreview
 						image={file ? file : "src/assets/images/red-panda.jpg"}
 						alt="Upload Image"
-						width="400px"
+						width="300px"
 					/>
 				</section>
 				<section className="container-sections">
@@ -76,7 +76,7 @@ function App() {
 					/>
 				</section>
 				<section className="container-sections">
-					<Webcam width={400} />
+					<Webcam width={350} />
 				</section>
 			</div>
 		</>

@@ -5,6 +5,7 @@ import "./webcam.scss";
 
 function Webcam(props: {
 	width: number;
+	height?: number;
 }) {
 	const [isOpen, setIsOpen] = useState(false);
 	function closeCam() {
@@ -12,17 +13,6 @@ function Webcam(props: {
 		if ("srcObject" in video) {
 			video.srcObject = null;
 			setIsOpen(false);
-		}
-	}
-	function stopAudio() {
-		const video = document.getElementById("videoCam") as HTMLVideoElement;
-		const audioTracks = (video.srcObject as MediaStream).getAudioTracks();
-		for (const track of audioTracks) {
-			if (track.enabled) {
-				track.enabled = false;
-			} else {
-				track.enabled = true;
-			}
 		}
 	}
 	function openCam() {
@@ -52,6 +42,7 @@ function Webcam(props: {
 				id="videoCam"
 				autoPlay
 				width={props.width}
+				height={props.height}
 				animate={{
 					scaleY: isOpen ? 1 : 0,
 					backgroundColor: isOpen ? "#000" : "#fff",
@@ -61,12 +52,9 @@ function Webcam(props: {
 			>
 				<track kind="captions" />
 			</motion.video>
-
 			<div className="button-container">
-				<Button text="Open Webcam" onClick={openCam} />
-				<Button text="Close Webcam" onClick={closeCam} />
+				<SlideButton onClick={isOpen ? closeCam : openCam} />
 			</div>
-			<SlideButton onClick={stopAudio} />
 		</main>
 	);
 }
