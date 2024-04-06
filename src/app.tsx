@@ -25,7 +25,11 @@ function App() {
 			<div className="wrapper">
 				<section
 					className="container-sections"
-					style={{ backgroundColor: darkMode ? "#f1f1f1" : "#000" }}
+					style={{
+						backgroundColor: darkMode
+							? "hsl(202, 65%, 10%)"
+							: "hsl(202, 65%, 95%)",
+					}}
 				>
 					<SlideButton
 						onClick={() => {

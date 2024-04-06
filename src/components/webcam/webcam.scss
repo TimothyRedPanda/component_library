@@ -1,15 +1,12 @@
-$primary-color: #b13d14;
-$quaternary-color: #9c1a04;
-$quinary-color: #db8758;
-$secondary-color: #fff;
-$tertiary-color: #340701;
+$primary: hsl(22, 65%, 60%);
+$accent: hsl(0, 0%, 95%);
 
 #videoCam {
     aspect-ratio: 16/9;
     object-fit: cover;
     border-radius: 2rem;
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
-    border: $quinary-color solid 2px;
+    box-shadow: 0 0 10px 0 hsla(0, 0%, 0%, 0.2);
+    border: $primary solid 2px;
     transition: all 0.35s ease-in-out;
 }
 

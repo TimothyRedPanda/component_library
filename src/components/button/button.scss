@@ -1,14 +1,11 @@
-$primary-color: #b13d14;
-$quaternary-color: #9c1a04;
-$quinary-color: #db8758;
-$secondary-color: #fff;
-$tertiary-color: #340701;
+$primary: hsl(22, 65%, 60%);
+$accent: hsl(0, 0%, 95%);
 
 .styledBtn {
-    background-color: $secondary-color;
-    border: 2px solid $quinary-color;
+    background-color: $accent;
+    border: 2px solid $primary;
     border-radius: 3rem;
-    color: $quinary-color;
+    color: $primary;
     cursor: pointer;
     font-size: 1.5rem;
     padding: 10px;

@@ -1,13 +1,10 @@
-$primary-color: #b13d14;
-$quaternary-color: #9c1a04;
-$quinary-color: #db8758;
-$secondary-color: #fff;
-$tertiary-color: #340701;
+$primary: hsl(22, 65%, 60%);
+$accent: hsl(0, 0%, 95%);
 
 .slideBtn {
     aspect-ratio: 1/1;
-    background-color: $quinary-color;
-    border: 2px solid $secondary-color;
+    background-color: $primary;
+    border: 2px solid $accent;
     border-radius: 100%;
     cursor: pointer;
     height: 100%;
@@ -16,8 +13,8 @@ $tertiary-color: #340701;
 
 .slideContainer {
     align-items: center;
-    background-color: $secondary-color;
-    border: 2px solid $quinary-color;
+    background-color: $accent;
+    border: 2px solid $primary;
     border-radius: 3rem;
     cursor: pointer;
     display: flex;
