@@ -1,21 +1,23 @@
 import { motion } from "framer-motion";
 import styled from "styled-components";
-
+const StyledSvg = styled(motion.svg)`
+	display: flex;
+  	justify-content: center;
+  	align-items: center;
+  	aspect-ratio: 1/1;
+	margin: 0.5rem;
+	`;
 const SvgComponent = (props: {
 	isHovered: boolean;
 	width?: string;
 }) => {
-	const StyledSvg = styled(motion.svg)`
-	display: flex;
-  	justify-content: center;
-  	align-items: center;
-  	width: ${props.width || "3rem"};
-  	aspect-ratio: 1/1;
-	margin: 0.5rem;
-	`;
 	const transition = { duration: 0.35 };
 	return (
-		<StyledSvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 449.01 530.01">
+		<StyledSvg
+			xmlns="http://www.w3.org/2000/svg"
+			viewBox="0 0 449.01 530.01"
+			style={{ width: props.width || "3rem" }}
+		>
 			<title>SVG</title>
 			<defs>
 				<style>

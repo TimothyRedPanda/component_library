@@ -14,7 +14,7 @@ const StyledSlideButton = styled(motion.div)`
     justify-content: flex-start;
     width: 4rem;
 
-&[data-isOn="true"] {
+&[data-ison="true"] {
     justify-content: flex-end;
 }`;
 
@@ -42,7 +42,7 @@ function SlideButton(props: { onClick?: () => void }) {
 		<>
 			<StyledSlideButton
 				className="slideContainer"
-				data-isOn={on}
+				data-ison={on}
 				onClickCapture={props.onClick}
 				onClick={toggleSwitch}
 				animate={{

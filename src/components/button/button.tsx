@@ -2,14 +2,6 @@ import { easeInOut, motion } from "framer-motion";
 import styled from "styled-components";
 import panda from "../../../panda.config.json";
 
-<<<<<<< HEAD
-const buttonTransition = { transition: 0.25, ease: "easeInOut" };
-const buttonVariants = {
-	y: -5,
-	backgroundColor: "hsl(22, 65%, 60%)",
-	color: "hsl(0, 0%, 95%)",
-};
-=======
 const RedPandaBtn = styled(motion.button)`
 	 background-color: ${panda.color.primary};
     border: 2px solid ${panda.color.secondary};
@@ -19,8 +11,6 @@ const RedPandaBtn = styled(motion.button)`
     padding: ${panda.box.padding};
     white-space: nowrap;
 `;
->>>>>>> development
-
 function Button(props: { text: string; onClick: () => void }) {
 	return (
 		<>

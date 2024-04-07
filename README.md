@@ -1,74 +1,71 @@
 For Developers Readme see - developers readme folder - in the github repository.
 
+Version 0.2.1 - The Styled Version - Styled Components introduced - along with a config for customization of colors.
+
 Red Panda Components -
 This is a component library being maintained by Timothy Bridge.
 Currently a student at School of Code. To install - 
 
-    npm i red-panda-components framer-motion sass
+    npm i red-panda-components framer-motion styled-components
 
 This will install red-panda-components into your project and also the framer-motion and sass dependencies. Currently it is a Typescript React library.
+
+As part of the NPM package there should be a panda.config.json - 
+this is where you can control - 
+color (primary and secondary colors) 
+/ padding 
+/ border-radius (standard size and large i.e. round edges on buttons) 
+/ fonts (small / medium / large i.e. for the fontSize props below)
+
+More to follow. Let us know if you have any questions - Find us on LinkedIn - Timothy Bridge
 
 To import into your react project -
     
     import { Button, SlideButton, Card, Input, FileUpload, ImagePreview, Webcam } from "red-panda-components";
 
 
-Version 0.1.9 - Webcam component added -
-
-			<Webcam width={400} />
-
-Version 0.1.8 - File upload SVG is now animated.
-
-Version 0.1.7 - File upload icon svg added to file upload - small bug fixes/refactoring.
-
-Version 0.1.6 - Improved Image preview animation - it doesn't scale as large now.
-
-Version 0.1.5 - Image preview component added - onChange property added to file upload. For example you
-could link the upload to the image preview - displaying the image you just uploaded.
-
-			function handleChange(event) {
-				console.log(event.target.files);
-					setFile(URL.createObjectURL(event.target.files[0]));
-				}
-
-			<FileUpload
-					uploadText="Upload File: "
-					accepts="image/*"
-					onChange={handleChange}
-				/>
-			<ImagePreview
-					image={file ? file : "default src of your choice"}
-					alt="Upload Image"
-					width="300px"
-				/>
-
-Version 0.1.4 - onClick functionality added to all button components -
-
-	onClick={() => {alert("Button CLicked")}}
-
-For example.
-
-Also add a custom file upload button -
-
-	<FileUpload uploadText="Upload File" accepts="image/*" />
-
-It takes uploadText and accepts as properties. The accepts property is optional - in this example we are limiting the button to showing image files.
-
-Version 0.1.3 - README updated for Input component.
-
-Version 0.1.2 - Input component added -
-	
-	<Input id="inputId" label="Optional Label:" />
-
-Version 0.1.1 - Small import fix.
-
-Version 0.0.9 - Card component added -
-
-    <SlideButton />
-	<Button text="Click me" />
-	<Card
-		title="Your Title Here"
-		description="Everything on this card is editable including the image, title and description. The card itself is a link (editable as well)."
-		image="Path to your image here"
-		link="Your link here"
+	<Button 
+		text="Your Text" 
+		onClick={() => {your click event}}
 	/>
+	
+	<SlideButton 
+		onClick={() => {your click event}}
+	>
+	
+	<FileUpload 
+		uploadText="Your text" 
+		accepts="What you want to upset for upload" 
+		onChange="Your change event" 
+		width="Your width"
+	/>
+
+	<ImagePreview 
+		image="Your image link" 
+		alt="Your Image alt text" 
+		width="Your width"
+	/>
+
+	<Input
+		id="input ID"
+		label="Optional Label:"
+		value= "Input value"
+		setValue="Your choice of how to set function"
+		fontSize="small or medium or large - see panda.config.json"
+	/>
+
+	<Card
+		title="Your title"
+		description="Your description"
+		image="Your image link"
+		link="Your link - link the card to something i.e. website"
+	/>
+
+	<Webcam
+		width = "Your width for webcam display"
+	/>
+
+
+
+
+

@@ -1,10 +1,6 @@
 import { motion } from "framer-motion";
-<<<<<<< HEAD
-import "./imagePreview.scss";
-=======
 import panda from "../../../panda.config.json";
 import styled from "styled-components";
->>>>>>> development
 
 const StyledImage = styled(motion.img)`
     border-radius: ${panda.box.borderRadius};

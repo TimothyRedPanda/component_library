@@ -1,9 +1,9 @@
 {
 	"name": "red-panda-components",
 	"private": false,
-	"version": "0.1.9",
+	"version": "0.2.1",
 	"main": "src/components/index.ts",
-	"files": ["src/components"],
+	"files": ["src/components", "panda.config.json"],
 	"license": "MIT",
 	"scripts": {
 		"dev": "vite",

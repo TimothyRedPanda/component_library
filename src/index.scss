@@ -9,21 +9,20 @@
 
 .wrapper {
     display: grid;
-    margin: 2rem;
+    padding: 1rem;
     row-gap: 20px;
-    column-gap: 1.33%;
-    grid-template-columns: repeat(auto-fill, 400px);
+    column-gap: 20px;
+    grid-template-columns: repeat(auto-fill, 500px);
     justify-content: space-around;
 }
 
 
 .container-sections {
     display: flex;
-    padding: 2rem;
     background-color: hsl(202, 65%, 95%);
     flex-flow: column nowrap;
+    aspect-ratio: 1/1;
     height: 400px;
-    gap: 1rem;
     border-radius: 1rem;
     justify-content: center;
     align-items: center;
@@ -31,7 +30,6 @@
 }
 
 .container-sections:hover {
-    background-color: hsl(202, 65%, 60%);
     box-shadow: 0 0 10px 0 hsla(0, 0%, 0%, 0.2);
     transition: all 0.35s ease-in-out;
 }

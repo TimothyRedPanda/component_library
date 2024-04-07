@@ -10,7 +10,24 @@ const inputVariants = {
 	backgroundColor: `${panda.color.secondary}`,
 	color: `${panda.color.primary}`,
 };
-
+const FileLabel = styled(motion.label)`
+display: flex;
+font-size: 1.5rem;
+justify-content: center;
+align-items: center;
+width: fit-content;
+height: fit-content;
+background: ${panda.color.secondary};
+padding: 1%;
+color: ${panda.color.primary};
+border: 2px solid ${panda.color.secondary};
+border-radius: ${panda.box.radiusLarge};
+cursor: pointer;
+`;
+const StyledInput = styled.input`
+display: none;
+padding: 2rem;
+`;
 function FileUpload(props: {
 	accepts?: string;
 	onChange?: (event: React.ChangeEvent<HTMLInputElement>) => void;
@@ -18,24 +35,6 @@ function FileUpload(props: {
 	width?: string;
 }) {
 	const [isHovered, setIsHovered] = useState(false);
-	const FileLabel = styled(motion.label)`
-    display: flex;
-    font-size: 1.5rem;
-    justify-content: center;
-    align-items: center;
-    width: fit-content;
-    height: fit-content;
-    background: ${panda.color.secondary};
-    padding: 1%;
-    color: ${panda.color.primary};
-    border: 2px solid ${panda.color.secondary};
-    border-radius: ${panda.box.radiusLarge};
-    cursor: pointer;
-`;
-	const StyledInput = styled.input`
-    display: none;
-	padding: 2rem;
-	`;
 	return (
 		<FileLabel
 			htmlFor="fileUpload"
