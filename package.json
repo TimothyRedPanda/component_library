@@ -3,7 +3,7 @@
 	"private": false,
 	"version": "0.1.9",
 	"main": "src/components/index.ts",
-	"files": ["src/components"],
+	"files": ["src/components", "panda.config.json"],
 	"license": "MIT",
 	"scripts": {
 		"dev": "vite",
@@ -34,5 +34,8 @@
 	},
 	"eslintConfig": {
 		"extends": ["plugin:storybook/recommended"]
+	},
+	"dependencies": {
+		"styled-components": "^6.1.8"
 	}
 }

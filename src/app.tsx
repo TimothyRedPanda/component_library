@@ -1,10 +1,12 @@
 import "./index.scss";
+import Title from "./components/Title";
 function App() {
 	return (
 		<>
 			<main className="wrapper">
 				<section className="container-sections">
-					<h1>Hello World</h1>
+					<Title />
+					<Title />
 				</section>
 			</main>
 		</>
