@@ -3,7 +3,8 @@ import styled from "styled-components";
 import panda from "../../../panda.config.json";
 
 const RedPandaBtn = styled(motion.button)`
-	 background-color: ${panda.color.primary};
+	background-color: ${panda.color.primary};
+	color: ${panda.color.secondary};
     border: 2px solid ${panda.color.secondary};
     border-radius: 3rem;
     cursor: pointer;

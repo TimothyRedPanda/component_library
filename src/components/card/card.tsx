@@ -3,13 +3,6 @@ import styled from "styled-components";
 import panda from "../../../panda.config.json";
 
 const StyledCard = styled(motion.div)`
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
  	align-items: center;
     background: ${panda.color.secondary};
     border: 2px solid ${panda.color.secondary};
@@ -23,22 +16,37 @@ const StyledCard = styled(motion.div)`
     flex-direction: column;
     height: fit-content;
     text-align: center;
-    width: 300px;
-`;
+	aspect-ratio: 1/1;
+	`;
 const StyledImage = styled.img`
 	width: 100%;
+	margin-bottom: 5px;
     border-radius: 1rem 1rem 0rem 0rem;
 `;
 const StyledDescription = styled.p`
-	padding: 0rem 0.5rem 0.5rem 0.5rem;
+	padding: 0rem;
+	margin: 0px;
+	flex-flow: column nowrap;
+	height:fit-content;
     text-align: left;
     font-size: ${panda.fonts.sizes.medium};
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	padding: 0.5rem;
 `;
 
 const StyledTitle = styled.h2`
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
+	padding: 0;
+	width:100%;
 	font-size: ${panda.fonts.sizes.large};
     border-bottom: 2px;
-    padding: 0.2rem 0.2rem 0rem 0.2rem;
+	margin: 0;
 `;
 
 const StyledLink = styled.a`
@@ -48,10 +56,15 @@ function Card(props: {
 	title: string;
 	description: string;
 	image: string;
+	width?: string;
 }) {
 	return (
 		<>
-			<StyledLink href={props.link} target="_blanc">
+			<StyledLink
+				href={props.link}
+				target="_blanc"
+				style={{ width: `${props.width}` || "300px" }}
+			>
 				<AnimatePresence>
 					<StyledCard
 						initial={{ rotate: 0, scale: 1, opacity: 0.8 }}
