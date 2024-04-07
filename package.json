@@ -3,7 +3,9 @@
 	"private": false,
 	"version": "0.1.8",
 	"main": "src/components/index.ts",
-	"files": ["src/components"],
+	"files": [
+		"src/components"
+	],
 	"license": "MIT",
 	"scripts": {
 		"dev": "vite",
@@ -33,6 +35,11 @@
 		"react-dom": "^18.2.0"
 	},
 	"eslintConfig": {
-		"extends": ["plugin:storybook/recommended"]
+		"extends": [
+			"plugin:storybook/recommended"
+		]
+	},
+	"dependencies": {
+		"styled-components": "^6.1.8"
 	}
 }
