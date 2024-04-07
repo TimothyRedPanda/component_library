@@ -69,18 +69,19 @@ function App() {
 						fontSize="small"
 					/>
 				</section>
-				<Card
-					title={fileName ? fileName : "Red Panda"}
-					description={
-						inputValue
-							? inputValue
-							: "This is an editable text field. You can change the text to anything you like."
-					}
-					image={file ? file : "src/assets/images/red-panda.jpg"}
-					link="https://www.chewedleashphotography.com"
-					width="300px"
-				/>
-
+				<section className="container-sections">
+					<Card
+						title={fileName ? fileName : "Red Panda"}
+						description={
+							inputValue
+								? inputValue
+								: "This is an editable text field. You can change the text to anything you like."
+						}
+						image={file ? file : "src/assets/images/red-panda.jpg"}
+						link="https://www.chewedleashphotography.com"
+						width="300px"
+					/>
+				</section>
 				<section className="container-sections">
 					<Webcam width={350} />
 				</section>
