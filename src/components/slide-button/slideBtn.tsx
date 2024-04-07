@@ -1,11 +1,36 @@
 import { motion } from "framer-motion";
 import React, { useState } from "react";
-import "./slideBtn.scss";
+import styled from "styled-components";
+import panda from "../../../panda.config.json";
+
+const StyledSlideButton = styled(motion.div)`
+    align-items: center;
+    background-color: ${panda.color.secondary};
+    border: 2px solid ${panda.color.primary};
+    border-radius: 3rem;
+    cursor: pointer;
+    display: flex;
+    height: 2rem;
+    justify-content: flex-start;
+    width: 4rem;
+
+&[data-isOn="true"] {
+    justify-content: flex-end;
+}`;
+
+const StyledSlideBtn = styled(motion.div)`
+    aspect-ratio: 1/1;
+    background-color: ${panda.color.primary};
+    border: 2px solid ${panda.color.secondary};
+    border-radius: ${panda.box.radiusLarge};
+    cursor: pointer;
+    height: 100%;
+    outline: none;`;
 
 function SlideButton(props: { onClick?: () => void }) {
-	const [on, setison] = useState(false);
+	const [on, setIsOn] = useState(false);
 	const toggleSwitch = () => {
-		setison(!on);
+		setIsOn(!on);
 	};
 
 	const switchTransition = {
@@ -15,21 +40,23 @@ function SlideButton(props: { onClick?: () => void }) {
 
 	return (
 		<>
-			<motion.div
+			<StyledSlideButton
 				className="slideContainer"
-				data-ison={on}
+				data-isOn={on}
 				onClickCapture={props.onClick}
 				onClick={toggleSwitch}
 				animate={{
-					backgroundColor: on ? "#fff" : "#db8758",
+					backgroundColor: on
+						? `${panda.color.secondary}`
+						: `${panda.color.primary}`,
 				}}
 			>
-				<motion.button
+				<StyledSlideBtn
 					className="slideBtn"
 					layout
 					transition={switchTransition}
 				/>
-			</motion.div>
+			</StyledSlideButton>
 		</>
 	);
 }

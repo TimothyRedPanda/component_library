@@ -1,5 +1,5 @@
 To work on and contribute to this project -
-      npm install typescript sass framer-motion
+      npm install typescript sass framer-motion styled-components
 
 To run the project -
       npm run dev

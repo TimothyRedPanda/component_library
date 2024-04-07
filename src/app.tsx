@@ -50,6 +50,7 @@ function App() {
 						uploadText={fileName}
 						accepts="image/*"
 						onChange={handleChange}
+						width="4rem"
 					/>
 				</section>
 				<section className="container-sections">
@@ -65,6 +66,7 @@ function App() {
 						label="Optional Label:"
 						value={inputValue}
 						setValue={setInputValue}
+						fontSize="small"
 					/>
 				</section>
 				<section className="container-sections">

@@ -1,7 +1,25 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
-import { Button, SlideButton } from "../../components";
-import "./webcam.scss";
+import { SlideButton } from "../../components";
+import styled from "styled-components";
+import panda from "../../../panda.config.json";
+
+const VideoCam = styled(motion.video)`
+ 	aspect-ratio: 16/9;
+    object-fit: cover;
+    border-radius: 2rem;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+    border: ${panda.color.secondary} solid 2px;
+    transition: all 0.35s ease-in-out;
+`;
+
+const ButtonContainer = styled.div`
+  	display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+`;
 
 function Webcam(props: {
 	width: number;
@@ -37,8 +55,8 @@ function Webcam(props: {
 			});
 	}
 	return (
-		<main className="webcam-container">
-			<motion.video
+		<ButtonContainer>
+			<VideoCam
 				id="videoCam"
 				autoPlay
 				width={props.width}
@@ -51,11 +69,11 @@ function Webcam(props: {
 				transition={{ duration: 0.35 }}
 			>
 				<track kind="captions" />
-			</motion.video>
-			<div className="button-container">
+			</VideoCam>
+			<div>
 				<SlideButton onClick={isOpen ? closeCam : openCam} />
 			</div>
-		</main>
+		</ButtonContainer>
 	);
 }
 
