@@ -1,5 +1,18 @@
 {
-	"primary": "hsl(0, 0%, 95%)",
-	"secondary": "hsl(22, 65%, 60%)",
-	"padding": "1rem"
+	"color": {
+		"primary": "hsl(0, 0%, 95%)",
+		"secondary": "hsl(22, 65%, 60%)"
+	},
+	"box": {
+		"padding": "1rem",
+		"borderRadius": "1rem",
+		"radiusLarge": "3rem"
+	},
+	"fonts": {
+		"sizes": {
+			"small": "1rem",
+			"medium": "1.5rem",
+			"large": "2rem"
+		}
+	}
 }
