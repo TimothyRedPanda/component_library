@@ -19,11 +19,12 @@ const StyledCard = styled(motion.div)`
 	aspect-ratio: 1/1;
 	`;
 const StyledImage = styled.img`
-	width: 100%;
 	margin-bottom: 5px;
+	object-fit: cover;
     border-radius: 1rem 1rem 0rem 0rem;
 `;
 const StyledDescription = styled.p`
+	width: 100%;
 	padding: 0rem;
 	margin: 0px;
 	flex-flow: column nowrap;
@@ -38,6 +39,7 @@ const StyledDescription = styled.p`
 `;
 
 const StyledTitle = styled.h2`
+	width: 100%;
 	display: flex;
 	flex-flow: column nowrap;
 	justify-content: center;
@@ -73,7 +75,11 @@ function Card(props: {
 						exit={{ rotate: 0, scale: 1, opacity: 0.8 }}
 						transition={{ duration: 0.25, type: "spring", stiffness: 200 }}
 					>
-						<StyledImage src={props.image} alt={props.title} />
+						<StyledImage
+							src={props.image}
+							alt={props.title}
+							style={{ width: `${props.width}` || "300px" }}
+						/>
 						<StyledTitle>{props.title}</StyledTitle>
 						<StyledDescription>{props.description}</StyledDescription>
 					</StyledCard>

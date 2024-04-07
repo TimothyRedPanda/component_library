@@ -1,6 +1,6 @@
 For Developers Readme see - developers readme folder - in the github repository.
 
-Version 0.2.4 - (Bug fixes and card now has a width property for easy customization) The Styled Version - Styled Components introduced - along with a config for customization of colors.
+Version 0.2.5 - (Bug fixes and card now has a width property for easy customization) The Styled Version - Styled Components introduced - along with a config for customization of colors.
 
 Red Panda Components -
 This is a component library being maintained by Timothy Bridge.
