@@ -79,7 +79,7 @@ function App() {
 						}
 						image={file ? file : "src/assets/images/red-panda.jpg"}
 						link="https://www.chewedleashphotography.com"
-						width="300px"
+						width="400px"
 					/>
 				</section>
 				<section className="container-sections">

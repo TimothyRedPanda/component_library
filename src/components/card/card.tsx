@@ -61,31 +61,29 @@ function Card(props: {
 	width?: string;
 }) {
 	return (
-		<>
-			<StyledLink
-				href={props.link}
-				target="_blanc"
-				style={{ width: `${props.width}` || "300px" }}
-			>
-				<AnimatePresence>
-					<StyledCard
-						initial={{ rotate: 0, scale: 1, opacity: 0.8 }}
-						whileHover={{ rotate: 5, filter: "blur(0px)", opacity: 1 }}
-						whileTap={{ scale: 0.95 }}
-						exit={{ rotate: 0, scale: 1, opacity: 0.8 }}
-						transition={{ duration: 0.25, type: "spring", stiffness: 200 }}
-					>
-						<StyledImage
-							src={props.image}
-							alt={props.title}
-							style={{ width: `${props.width}` || "300px" }}
-						/>
-						<StyledTitle>{props.title}</StyledTitle>
-						<StyledDescription>{props.description}</StyledDescription>
-					</StyledCard>
-				</AnimatePresence>
-			</StyledLink>
-		</>
+		<StyledLink
+			href={props.link}
+			target="_blanc"
+			style={{ width: `${props.width}` || "300px" }}
+		>
+			<AnimatePresence>
+				<StyledCard
+					initial={{ rotate: 0, scale: 1, opacity: 0.8 }}
+					whileHover={{ rotate: 5, filter: "blur(0px)", opacity: 1 }}
+					whileTap={{ scale: 0.95 }}
+					exit={{ rotate: 0, scale: 1, opacity: 0.8 }}
+					transition={{ duration: 0.25, type: "spring", stiffness: 200 }}
+				>
+					<StyledImage
+						src={props.image}
+						alt={props.title}
+						style={{ width: `${props.width}` || "300px" }}
+					/>
+					<StyledTitle>{props.title}</StyledTitle>
+					<StyledDescription>{props.description}</StyledDescription>
+				</StyledCard>
+			</AnimatePresence>
+		</StyledLink>
 	);
 }
 
