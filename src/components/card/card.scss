@@ -1,8 +1,5 @@
-$primary-color: #b13d14;
-$quaternary-color: #9c1a04;
-$quinary-color: #db8758;
-$secondary-color: #fff;
-$tertiary-color: #340701;
+$primary: hsl(22, 65%, 60%);
+$accent: hsl(0, 0%, 95%);
 
 *,
 *::before,
@@ -18,13 +15,13 @@ a {
 
 .card-container {
     align-items: center;
-    background: $quinary-color;
-    border: 2px solid $quinary-color;
+    background: $primary;
+    border: 2px solid $primary;
     border-radius: 1rem;
-    -webkit-box-shadow: -4px 21px 51px -5px rgba(0,0,0,0.5);
-    -moz-box-shadow: -4px 21px 51px -5px rgba(0,0,0,0.5);
-    box-shadow: -4px 21px 51px -5px rgba(0,0,0,0.5);
-    color: $secondary-color;
+    -webkit-box-shadow: -4px 21px 51px -5px hsla(0, 0%, 0%, 0.5);
+    -moz-box-shadow: -4px 21px 51px -5px hsla(0, 0%, 0%, 0.5);
+    box-shadow: -4px 21px 51px -5px hsla(0, 0%, 0%, 0.5);
+    color: $accent;
     cursor: pointer;
     display: flex;
     flex-direction: column;
