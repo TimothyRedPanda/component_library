@@ -1,10 +1,11 @@
+import { motion } from "framer-motion";
 import "./imagePreview.scss";
-import { easeInOut, motion } from "framer-motion";
 
 function ImagePreview(props: {
 	image: string;
 	alt: string;
 	width: string;
+	height?: string;
 }) {
 	return (
 		<>
@@ -16,7 +17,7 @@ function ImagePreview(props: {
 				className="image-preview"
 				src={props.image}
 				alt={props.alt}
-				style={{ width: `${props.width}` }}
+				style={{ width: `${props.width}`, height: `${props.height}` }}
 			/>
 		</>
 	);
