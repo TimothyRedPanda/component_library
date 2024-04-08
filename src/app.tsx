@@ -1,3 +1,4 @@
+import * as Sentry from "@sentry/react";
 import { useState } from "react";
 import {
 	Button,
@@ -90,4 +91,4 @@ function App() {
 	);
 }
 
-export default App;
+export default Sentry.withProfiler(App);

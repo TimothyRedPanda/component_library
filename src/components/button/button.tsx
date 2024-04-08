@@ -19,7 +19,7 @@ function Button(props: { text: string; onClick: () => void }) {
 				onClick={props.onClick}
 				className="styledBtn"
 				whileHover={{
-					y: "-10px",
+					y: "-10",
 					backgroundColor: `${panda.color.secondary}`,
 					color: `${panda.color.primary}`,
 				}}
