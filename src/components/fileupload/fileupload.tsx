@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { useState } from "react";
+import React, { useState } from "react";
 import SvgComponent from "./fileIcon";
 import styled from "styled-components";
 import panda from "../../../panda.config.json";
@@ -21,7 +21,7 @@ background: ${panda.color.secondary};
 padding: 1%;
 color: ${panda.color.primary};
 border: 2px solid ${panda.color.secondary};
-border-radius: ${panda.box.radiusLarge};
+border-radius: 3rem;
 cursor: pointer;
 `;
 const StyledInput = styled.input`

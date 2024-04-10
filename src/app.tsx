@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import {
 	Button,
 	Card,
@@ -66,7 +66,6 @@ function App() {
 						label="Optional Label:"
 						value={inputValue}
 						setValue={setInputValue}
-						fontSize="small"
 					/>
 				</section>
 				<section className="container-sections">

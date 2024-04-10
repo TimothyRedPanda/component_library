@@ -3,7 +3,7 @@ import panda from "../../../panda.config.json";
 import styled from "styled-components";
 
 const StyledImage = styled(motion.img)`
-    border-radius: ${panda.box.borderRadius};
+    border-radius: 1rem;
     border: 2px solid ${panda.color.secondary};
     object-fit: cover;
     -webkit-box-shadow: -4px 21px 51px -5px rgba(0,0,0,0.5);

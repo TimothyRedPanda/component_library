@@ -9,7 +9,7 @@ const RedPandaBtn = styled(motion.button)`
     border-radius: 3rem;
     cursor: pointer;
     font-size: 1.5rem;
-    padding: ${panda.box.padding};
+    padding: 1rem;
     white-space: nowrap;
 `;
 function Button(props: { text: string; onClick: () => void }) {

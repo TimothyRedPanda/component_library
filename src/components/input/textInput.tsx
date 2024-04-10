@@ -10,9 +10,9 @@ const InputContainer = styled.div`
     text-align: center;
 `;
 const InputField = styled.input`
-  	padding: ${panda.box.padding};
+  	padding: 1rem;
     text-align: center;
-    border-radius: ${panda.box.radiusLarge};
+    border-radius: 3rem;
     outline: none;
     border: none;
     color: ${panda.color.primary};
@@ -33,10 +33,10 @@ function Input(props: {
 				style={{
 					fontSize:
 						props.fontSize === "small"
-							? panda.fonts.sizes.small
+							? "0.5rem"
 							: props.fontSize === "medium"
-								? panda.fonts.sizes.medium
-								: panda.fonts.sizes.large,
+								? "1rem"
+								: props.fontSize === "large" ? "2rem" : "1.5rem"
 				}}
 				className="input-field"
 				id={props.id}

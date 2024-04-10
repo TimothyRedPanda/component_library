@@ -21,16 +21,14 @@ const StyledCard = styled(motion.div)`
 const StyledImage = styled.img`
 	margin-bottom: 5px;
 	object-fit: cover;
-    border-radius: 1rem 1rem 0rem 0rem;
+	border-radius: 1rem 1rem 0 0;
 `;
 const StyledDescription = styled.p`
 	width: 100%;
-	padding: 0rem;
-	margin: 0px;
+	margin: 0;
 	flex-flow: column nowrap;
-	height:fit-content;
-    text-align: left;
-    font-size: ${panda.fonts.sizes.medium};
+	height: fit-content;
+	font-size: 1.5rem;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -45,9 +43,8 @@ const StyledTitle = styled.h2`
 	justify-content: center;
 	align-items: center;
 	padding: 0;
-	width:100%;
-	font-size: ${panda.fonts.sizes.large};
-    border-bottom: 2px;
+	font-size: 2rem;
+	border-bottom: 2px;
 	margin: 0;
 `;
 

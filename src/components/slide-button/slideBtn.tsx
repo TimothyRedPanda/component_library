@@ -22,7 +22,7 @@ const StyledSlideBtn = styled(motion.div)`
     aspect-ratio: 1/1;
     background-color: ${panda.color.primary};
     border: 2px solid ${panda.color.secondary};
-    border-radius: ${panda.box.radiusLarge};
+    border-radius: 3rem;
     cursor: pointer;
     height: 100%;
     outline: none;`;
