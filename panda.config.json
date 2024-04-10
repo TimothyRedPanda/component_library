@@ -1,6 +1,6 @@
 {
 	"color": {
-		"primary": "hsl(0, 0%, 95%)",
-		"secondary": "hsl(22, 65%, 60%)"
+		"primary": "#313638",
+		"secondary": "#f06543"
 	}
 }

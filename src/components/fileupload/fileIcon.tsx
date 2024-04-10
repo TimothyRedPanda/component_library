@@ -1,5 +1,7 @@
 import { motion } from "framer-motion";
 import styled from "styled-components";
+import panda from "../../../panda.config.json"
+
 const StyledSvg = styled(motion.svg)`
 	display: flex;
   	justify-content: center;
@@ -22,7 +24,7 @@ const SvgComponent = (props: {
 			<defs>
 				<style>
 					{
-						".cls-1{fill:#340701}.cls-1,.cls-2,.cls-3{stroke-width:0}.cls-4{stroke-width:10px}.cls-4,.cls-5,.cls-6{stroke:#db8758;stroke-miterlimit:10}.cls-4,.cls-6{fill:none;stroke-linecap:round; stroke:#db8758}.cls-2,.cls-5{fill:#db8758}.cls-3{fill:#fff}.cls-5,.cls-6{stroke-width:15px}"
+						`.cls-1{fill:${panda.color.primary}}.cls-1,.cls-2,.cls-3{stroke-width:0}.cls-4{stroke-width:10px}.cls-4,.cls-5,.cls-6{stroke:${panda.color.secondary}};stroke-miterlimit:10}.cls-4,.cls-6{fill:none;stroke-linecap:round; stroke:#db8758}.cls-2,.cls-5{fill:${panda.color.secondary}}.cls-3{fill:#fff}.cls-5,.cls-6{stroke-width:15px}`
 					}
 				</style>
 			</defs>

@@ -17,7 +17,7 @@ justify-content: center;
 align-items: center;
 width: fit-content;
 height: fit-content;
-background: ${panda.color.secondary};
+background: ${panda.color.primary};
 padding: 1%;
 color: ${panda.color.primary};
 border: 2px solid ${panda.color.secondary};
