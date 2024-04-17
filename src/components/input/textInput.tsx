@@ -22,27 +22,18 @@ const InputField = styled.input`
 function Input(props: {
 	id: string;
 	label?: string;
-	value: string;
-	setValue: (value: string) => void;
-	fontSize?: string;
+	value?: string;
+	setValue?: (value: string) => void;
 }) {
 	return (
 		<InputContainer>
 			<label htmlFor={props.id}>{props.label}</label>
 			<InputField
-				style={{
-					fontSize:
-						props.fontSize === "small"
-							? "0.5rem"
-							: props.fontSize === "medium"
-								? "1rem"
-								: props.fontSize === "large" ? "2rem" : "1.5rem"
-				}}
 				className="input-field"
 				id={props.id}
 				type="text"
 				value={props.value}
-				onChange={(e) => props.setValue(e.target.value)}
+				onChange={(e) => props.setValue ? props.setValue(e.target.value) : console.log("No Value")}
 			/>
 		</InputContainer>
 	);

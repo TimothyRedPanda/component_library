@@ -22,7 +22,7 @@ const ButtonContainer = styled.div`
 `;
 
 function Webcam(props: {
-	width: number;
+	width?: number;
 	height?: number;
 }) {
 	const [isOpen, setIsOpen] = useState(false);
@@ -45,7 +45,7 @@ function Webcam(props: {
 					video.srcObject = vidStream;
 				}
 				video.onloadedmetadata = () => {
-					video.play();
+					video.play().then(() => {console.log("Video Start")});
 					setIsOpen(true);
 				};
 			})

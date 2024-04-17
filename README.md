@@ -1,25 +1,29 @@
-For Developers Readme see - developers readme folder - in the github repository.
+For Developers Readme see - developers readme folder - in the GitHub repository.
 
-Version 0.2.7 - (Bug fixes and card now has a width property for easy customization) The Styled Version - Styled Components introduced - along with a config for customization of colors.
+Version 0.2.8 - Refactoring - removal of unneeded code. Most props are optional now.
 
-Red Panda Components -
-This is a component library being maintained by Timothy Bridge.
-Currently a student at School of Code. To install - 
+Version 0.2.7 -
+(Bug fixes and card now have a width property for easy customization) The Styled Version -
+Styled Components introduced—along with a config for customization of colors.
+
+Red Panda Components—This is a component library being maintained by Timothy Bridge.
+Currently, a student at the School of Code.
+To install 
 
     npm i red-panda-components framer-motion styled-components
 
 This will install red-panda-components into your project and also the framer-motion and sass dependencies. Currently it is a Typescript React library.
 
-As part of the NPM package there should be a panda.config.json - 
+As part of the NPM package, there should be a panda.config.json - 
 this is where you can control - 
 color (primary and secondary colors) 
 / padding 
 / border-radius (standard size and large i.e. round edges on buttons) 
-/ fonts (small / medium / large i.e. for the fontSize props below)
+/ fonts (small / medium / large i.e., for the fontSize props below)
 
-More to follow. Let us know if you have any questions - Find us on LinkedIn - Timothy Bridge
+More to follow. Let us know if you have any questions—Find us on LinkedIn–Timothy Bridge
 
-To import into your react project -
+To import into your React project
     
     import { Button, SlideButton, Card, Input, FileUpload, ImagePreview, Webcam } from "red-panda-components";
 

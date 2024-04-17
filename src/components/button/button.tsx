@@ -12,7 +12,7 @@ const RedPandaBtn = styled(motion.button)`
     padding: 1rem;
     white-space: nowrap;
 `;
-function Button(props: { text: string; onClick: () => void }) {
+function Button(props: { text?: string; onClick?: () => void }) {
 	return (
 		<>
 			<RedPandaBtn

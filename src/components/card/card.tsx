@@ -51,7 +51,7 @@ const StyledTitle = styled.h2`
 const StyledLink = styled.a`
 	text-decoration: none`;
 function Card(props: {
-	link: string;
+	link?: string;
 	title: string;
 	description: string;
 	image: string;

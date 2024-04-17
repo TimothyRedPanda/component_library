@@ -31,7 +31,7 @@ padding: 2rem;
 function FileUpload(props: {
 	accepts?: string;
 	onChange?: (event: React.ChangeEvent<HTMLInputElement>) => void;
-	uploadText: string;
+	uploadText?: string;
 	width?: string;
 }) {
 	const [isHovered, setIsHovered] = useState(false);

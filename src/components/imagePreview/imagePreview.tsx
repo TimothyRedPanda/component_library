@@ -12,8 +12,8 @@ const StyledImage = styled(motion.img)`
 `;
 function ImagePreview(props: {
 	image: string;
-	alt: string;
-	width: string;
+	alt?: string;
+	width?: string;
 	height?: string;
 }) {
 	return (
